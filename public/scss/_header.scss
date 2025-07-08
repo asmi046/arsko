@@ -1,5 +1,365 @@
 @use 'vars' as *;
 
-header{
+.header {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../img/min_p.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 
+    // Затемнение overlay
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    // Навигация
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        flex-shrink: 0;
+    }
+
+    &__logo {
+        &-link {
+            display: block;
+        }
+
+        &-img {
+            height: 50px;
+            width: auto;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__contact-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__contact-label {
+        font-family: $main_fonts;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    &__contact-link {
+        font-family: $main_fonts;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        transition: $main_transition;
+
+        &:hover {
+            color: $main_color;
+        }
+    }
+
+    &__contact-btn {
+        white-space: nowrap;
+    }
+
+    // Бургер меню
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        transition: $main_transition;
+
+        &-line {
+            width: 25px;
+            height: 2px;
+            background: white;
+            transition: $main_transition;
+        }
+
+        &.active {
+            .header__burger-line {
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(6px, 6px);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(6px, -6px);
+                }
+            }
+        }
+    }
+
+    // Основная часть
+    &__main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        width: 100%;
+        align-items: center;
+    }
+
+    // Текстовая часть
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__subtitle {
+        font-family: $main_fonts;
+        font-size: 14px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+
+    &__title {
+        font-family: $head_fonts;
+        font-size: 48px;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    // Блок новостей
+    &__news {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__news-title {
+        font-family: $head_fonts;
+        font-size: 18px;
+        color: white;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    &__news-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__news-all {
+        font-family: $main_fonts;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        transition: $main_transition;
+        align-self: flex-start;
+
+        &:hover {
+            color: $main_color;
+        }
+    }
+}
+
+// Карточка новости
+.news-card {
+    position: relative;
+    background: $card_color;
+    border-radius: $border_rad;
+    padding: 20px;
+    transition: $main_transition;
+
+    &:hover {
+        background: rgba(12, 48, 64, 0.9);
+    }
+
+    &__title {
+        font-family: $main_fonts;
+        font-size: 16px;
+        color: $main_color;
+        margin: 0 0 10px 0;
+        line-height: 1.4;
+        padding-right: 30px;
+    }
+
+    &__date {
+        font-family: $main_fonts;
+        font-size: 14px;
+        color: white;
+        display: block;
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        width: 24px;
+        height: 24px;
+        transition: $main_transition;
+
+        &:hover {
+            transform: translateX(5px);
+        }
+    }
+
+    &__icon {
+        width: 24px;
+        height: 20px;
+        fill: white;
+    }
+}
+
+// Адаптация под устройства
+@media (max-width: 1200px) {
+    .header {
+        &__content {
+            gap: 40px;
+        }
+
+        &__title {
+            font-size: 42px;
+        }
+
+        &__contacts {
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        &__content {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 36px;
+        }
+
+        &__nav {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        &__contacts {
+            order: 1;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &__burger {
+            order: 2;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__nav {
+            padding: 15px 0;
+        }
+
+        &__contacts {
+            display: none; // Скрываем контакты на мобильных, показываем через меню
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__subtitle {
+            font-size: 12px;
+        }
+
+        &__content {
+            gap: 30px;
+        }
+
+        &__news-grid {
+            gap: 12px;
+        }
+    }
+
+    .news-card {
+        padding: 15px;
+
+        &__title {
+            font-size: 14px;
+            padding-right: 25px;
+        }
+
+        &__date {
+            font-size: 12px;
+        }
+
+        &__link {
+            width: 20px;
+            height: 20px;
+            bottom: 12px;
+            right: 12px;
+        }
+
+        &__icon {
+            width: 20px;
+            height: 16px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        &__title {
+            font-size: 24px;
+        }
+
+        &__logo-img {
+            height: 40px;
+        }
+    }
+
+    .news-card {
+        padding: 12px;
+
+        &__title {
+            font-size: 13px;
+        }
+    }
 }
