@@ -35,7 +35,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 0;
+        padding: 0 0 20px 0;
         flex-shrink: 0;
     }
 
@@ -45,7 +45,7 @@
         }
 
         &-img {
-            height: 50px;
+            height: 81px;
             width: auto;
         }
     }
@@ -54,20 +54,14 @@
         display: flex;
         align-items: center;
         gap: 30px;
+        margin-right: 60px;
+        margin-left: auto;
     }
 
     &__contact-item {
         display: flex;
         flex-direction: column;
         gap: 5px;
-    }
-
-    &__contact-label {
-        font-family: $main_fonts;
-        font-size: 12px;
-        color: rgba(255, 255, 255, 0.8);
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
     }
 
     &__contact-link {
@@ -83,7 +77,8 @@
     }
 
     &__contact-btn {
-        white-space: nowrap;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     // Бургер меню
@@ -130,7 +125,7 @@
 
     &__content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         gap: 60px;
         width: 100%;
         align-items: center;
@@ -144,8 +139,8 @@
     }
 
     &__subtitle {
-        font-family: $main_fonts;
-        font-size: 14px;
+        font-family: $head_fonts;
+        font-size: 28px;
         color: white;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -170,17 +165,16 @@
     }
 
     &__news-title {
-        font-family: $head_fonts;
-        font-size: 18px;
+        font-family: $main_fonts;
+        font-size: 16px;
         color: white;
-        margin: 0;
-        text-transform: uppercase;
+        font-weight: normal;
     }
 
     &__news-grid {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
     }
 
     &__news-all {
@@ -201,7 +195,6 @@
 .news-card {
     position: relative;
     background: $card_color;
-    border-radius: $border_rad;
     padding: 20px;
     transition: $main_transition;
 
@@ -216,6 +209,7 @@
         margin: 0 0 10px 0;
         line-height: 1.4;
         padding-right: 30px;
+        font-weight: normal;
     }
 
     &__date {

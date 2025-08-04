@@ -12,6 +12,7 @@ button,
     line-height: 1;
     font-family: $main_fonts;
     font-size: 16px;
+    border-radius: 50px;
 
     &:hover {
         background-color: $hover_color;
@@ -19,13 +20,14 @@ button,
 }
 
 .button-white {
-    background-color: white;
-    color: $main_color;
-    border: 1px solid $main_color;
+    background-color: $pure_color;
+    color: $black_color;
+    border: 1px solid $pure_color;
     text-decoration: none;
 
     &:hover{
         color: white;
         text-decoration: none;
+        border-color: $main_color;
     }
 }

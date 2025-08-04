@@ -13,24 +13,20 @@
     <div class="container">
         <!-- Шапка навигации -->
         <nav class="header__nav">
-            <!-- Логотип -->
             <div class="header__logo">
                 <a href="/" class="header__logo-link">
                     <img src="{{ asset('img/logo.svg') }}" alt="Логотип" class="header__logo-img">
                 </a>
             </div>
 
-            <!-- Контактная информация -->
             <div class="header__contacts">
                 <div class="header__contact-item">
-                    <span class="header__contact-label">Телефон:</span>
                     <a href="tel:+79999999999" class="header__contact-link">+7 999 999 99 99</a>
                 </div>
                 <div class="header__contact-item">
-                    <span class="header__contact-label">Email:</span>
                     <a href="mailto:email@mail.ru" class="header__contact-link">email@mail.ru</a>
                 </div>
-                <button class="button header__contact-btn">Написать обращение</button>
+                <button class="button button-white header__contact-btn">Написать обращение</button>
             </div>
 
             <!-- Бургер меню -->
@@ -63,7 +59,7 @@
                                 </svg>
                             </a>
                         </article>
-                        
+
                         <article class="news-card">
                             <h3 class="news-card__title">Жилищное строительство в Курской области для обеспечения жителей приграничья</h3>
                             <time class="news-card__date" datetime="2025-04-03">03.04.2025</time>
@@ -73,7 +69,7 @@
                                 </svg>
                             </a>
                         </article>
-                        
+
                         <article class="news-card">
                             <h3 class="news-card__title">Жилищное строительство в Курской области для обеспечения жителей приграничья</h3>
                             <time class="news-card__date" datetime="2025-04-03">03.04.2025</time>
