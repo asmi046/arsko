@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    padding: 0;
 
     // Затемнение overlay
     &::before {
@@ -35,7 +36,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 0 20px 0;
+        padding: 20px 0;
         flex-shrink: 0;
     }
 
@@ -99,19 +100,10 @@
             transition: $main_transition;
         }
 
-        &.active {
+        &:hover {
+            background: unset;
             .header__burger-line {
-                &:nth-child(1) {
-                    transform: rotate(45deg) translate(6px, 6px);
-                }
-
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                &:nth-child(3) {
-                    transform: rotate(-45deg) translate(6px, -6px);
-                }
+                background-color: $main_color;
             }
         }
     }
@@ -261,7 +253,6 @@
         &__content {
             grid-template-columns: 1fr;
             gap: 40px;
-            text-align: center;
         }
 
         &__title {
@@ -292,7 +283,7 @@
         }
 
         &__contacts {
-            display: none; // Скрываем контакты на мобильных, показываем через меню
+                display: none; // Скрываем контакты на мобильных, показываем через меню
         }
 
         &__title {
@@ -345,7 +336,7 @@
         }
 
         &__logo-img {
-            height: 40px;
+            height: 60px;
         }
     }
 

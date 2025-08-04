@@ -29,8 +29,8 @@
                 <button class="button button-white header__contact-btn">Написать обращение</button>
             </div>
 
-            <!-- Бургер меню -->
-            <button class="header__burger" type="button" aria-label="Меню">
+            {{-- <x-burger-icon></x-burger-icon> --}}
+            <button class="header__burger show_menue_button_do" type="button" aria-label="Меню">
                 <span class="header__burger-line"></span>
                 <span class="header__burger-line"></span>
                 <span class="header__burger-line"></span>
