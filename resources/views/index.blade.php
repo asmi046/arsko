@@ -87,6 +87,26 @@
     </div>
 </header>
 
+<section class="about">
+    <div class="container">
+        <div class="about__wrapper">
+            <h2 class="about__title">О нас</h2>
+            <p class="about__subtitle">Реализация инфраструктурных проектов, строительство ИЖС и МКД, арендное жилье</p>
+            <div class="about__description text_styles">
+                100% акций АО "СЗ "АРСКО" находится в собственности Курской области в лице Министерства имущества Курской области. Регулирование деятельности общества в соответствующей отрасли осуществляет Министерство строительства Курской области в соответствии с постановлением Правительства Курской области от 15.12.2023 № 1315-пп «Об управлении акциями (долями участия) хозяйственных обществ, находящимися в собственности Курской области».
+            </div>
+        </div>
+    </div>
+
+    <div class="about__image">
+        <img src="{{ asset('img/about.jpg') }}" alt="О нас" class="about__image-photo">
+        <div class="about__promo">
+            <p class="about__promo-text">Мы строим <br>будущее!</p>
+            <button class="button button-white about__promo-btn">Задать вопрос</button>
+        </div>
+    </div>
+</section>
+
 @include('allicon')
 @endsection
 
