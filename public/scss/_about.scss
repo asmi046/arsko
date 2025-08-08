@@ -97,7 +97,7 @@
 @media (max-width: 1200px) {
     .about {
         &__wrapper {
-            max-width: 55%;
+            max-width: 40%;
         }
 
         &__image {
@@ -113,11 +113,11 @@
         }
 
         &__promo {
-            left: -20%;
+            left: -13%;
             padding: 30px;
 
             &-text {
-                font-size: 48px;
+                font-size: 32px;
             }
         }
     }
