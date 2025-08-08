@@ -253,6 +253,82 @@
     </div>
 </section>
 
+<section class="partners">
+    <div class="container">
+        <h2 class="partners__title">Учредители и партнеры</h2>
+        
+        <div class="partners__grid">
+            <div class="partners__card">
+                <div class="partners__card-logo">
+                    <img src="{{ asset('img/adm.png') }}" alt="Администрация Курской области" class="partners__card-image">
+                </div>
+                <h3 class="partners__card-title">Администрация<br>Курской области</h3>
+            </div>
+
+            <div class="partners__card">
+                <div class="partners__card-logo">
+                    <img src="{{ asset('img/dom.png') }}" alt="Единый институт развития ДОМ.РФ" class="partners__card-image">
+                </div>
+                <h3 class="partners__card-title">Единый институт развития ДОМ.РФ</h3>
+            </div>
+
+            <div class="partners__card">
+                <div class="partners__card-logo">
+                    <img src="{{ asset('img/adm.png') }}" alt="Администрация Курской области" class="partners__card-image">
+                </div>
+                <h3 class="partners__card-title">Администрация<br>Курской области</h3>
+            </div>
+
+            <div class="partners__card">
+                <div class="partners__card-logo">
+                    <img src="{{ asset('img/dom.png') }}" alt="Единый институт развития ДОМ.РФ" class="partners__card-image">
+                </div>
+                <h3 class="partners__card-title">Единый институт развития ДОМ.РФ</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta__wrapper">
+            <!-- Левая часть с формой -->
+            <div class="cta__content">
+                <h2 class="cta__title">Обратная связь</h2>
+                <p class="cta__description">
+                    Здесь вы можете оставить обращение, задать интересующие вас вопросы или внести предложения по работе общества
+                </p>
+                
+                <form class="cta__form" action="#" method="POST">
+                    @csrf
+                    <div class="cta__form-group">
+                        <input type="text" name="name" placeholder="Имя" class="cta__form-input" required>
+                    </div>
+                    
+                    <div class="cta__form-group">
+                        <input type="tel" name="phone" placeholder="Телефон" class="cta__form-input" required>
+                    </div>
+                    
+                    <div class="cta__form-group">
+                        <input type="email" name="email" placeholder="E-mail" class="cta__form-input" required>
+                    </div>
+                    
+                    <div class="cta__form-group">
+                        <textarea name="message" placeholder="Сообщение" class="cta__form-textarea" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="button button-white cta__form-btn">Отправить</button>
+                </form>
+            </div>
+
+            <!-- Правая часть с изображением -->
+            <div class="cta__image">
+                <img src="{{ asset('img/form.jpg') }}" alt="Обратная связь" class="cta__image-photo">
+            </div>
+        </div>
+    </div>
+</section>
+
 @include('allicon')
 @endsection
 
