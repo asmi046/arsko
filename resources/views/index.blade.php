@@ -9,83 +9,8 @@
 @section('description', $description)
 
 @section('main')
-<header class="header">
-    <div class="container">
-        <!-- Шапка навигации -->
-        <nav class="header__nav">
-            <div class="header__logo">
-                <a href="/" class="header__logo-link">
-                    <img src="{{ asset('img/logo.svg') }}" alt="Логотип" class="header__logo-img">
-                </a>
-            </div>
 
-            <div class="header__contacts">
-                <div class="header__contact-item">
-                    <a href="tel:+79999999999" class="header__contact-link">+7 999 999 99 99</a>
-                </div>
-                <div class="header__contact-item">
-                    <a href="mailto:email@mail.ru" class="header__contact-link">email@mail.ru</a>
-                </div>
-                <button class="button button-white header__contact-btn">Написать обращение</button>
-            </div>
-
-            {{-- <x-burger-icon></x-burger-icon> --}}
-            <button class="header__burger show_menue_button_do" type="button" aria-label="Меню">
-                <span class="header__burger-line"></span>
-                <span class="header__burger-line"></span>
-                <span class="header__burger-line"></span>
-            </button>
-        </nav>
-
-        <!-- Основная часть -->
-        <div class="header__main">
-            <div class="header__content">
-                <!-- Левая часть с заголовками -->
-                <div class="header__text">
-                    <p class="header__subtitle">Региональный оператор строительства ИЖС и МКД</p>
-                    <h1 class="header__title">Агентство развития строительства Курской области</h1>
-                </div>
-
-                <!-- Правая часть с новостями -->
-                <div class="header__news">
-                    <h2 class="header__news-title">Новости</h2>
-                    <div class="header__news-grid">
-                        <article class="news-card">
-                            <h3 class="news-card__title">Жилищное строительство в Курской области для обеспечения жителей приграничья</h3>
-                            <time class="news-card__date" datetime="2025-04-03">03.04.2025</time>
-                            <a href="#" class="news-card__link" aria-label="Читать новость">
-                                <svg class="news-card__icon">
-                                    <use xlink:href="#white_arrow"></use>
-                                </svg>
-                            </a>
-                        </article>
-
-                        <article class="news-card">
-                            <h3 class="news-card__title">Жилищное строительство в Курской области для обеспечения жителей приграничья</h3>
-                            <time class="news-card__date" datetime="2025-04-03">03.04.2025</time>
-                            <a href="#" class="news-card__link" aria-label="Читать новость">
-                                <svg class="news-card__icon">
-                                    <use xlink:href="#white_arrow"></use>
-                                </svg>
-                            </a>
-                        </article>
-
-                        <article class="news-card">
-                            <h3 class="news-card__title">Жилищное строительство в Курской области для обеспечения жителей приграничья</h3>
-                            <time class="news-card__date" datetime="2025-04-03">03.04.2025</time>
-                            <a href="#" class="news-card__link" aria-label="Читать новость">
-                                <svg class="news-card__icon">
-                                    <use xlink:href="#white_arrow"></use>
-                                </svg>
-                            </a>
-                        </article>
-                    </div>
-                    <a href="#" class="header__news-all">Смотреть все новости</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+<x-header-main></x-header-main>
 
 <section class="about">
     <div class="container">
@@ -256,7 +181,7 @@
 <section class="partners">
     <div class="container">
         <h2 class="partners__title">Учредители и партнеры</h2>
-        
+
         <div class="partners__grid">
             <div class="partners__card">
                 <div class="partners__card-logo">
@@ -298,25 +223,25 @@
                 <p class="cta__description">
                     Здесь вы можете оставить обращение, задать интересующие вас вопросы или внести предложения по работе общества
                 </p>
-                
+
                 <form class="cta__form" action="#" method="POST">
                     @csrf
                     <div class="cta__form-group">
                         <input type="text" name="name" placeholder="Имя" class="cta__form-input" required>
                     </div>
-                    
+
                     <div class="cta__form-group">
                         <input type="tel" name="phone" placeholder="Телефон" class="cta__form-input" required>
                     </div>
-                    
+
                     <div class="cta__form-group">
                         <input type="email" name="email" placeholder="E-mail" class="cta__form-input" required>
                     </div>
-                    
+
                     <div class="cta__form-group">
                         <textarea name="message" placeholder="Сообщение" class="cta__form-textarea" rows="4" required></textarea>
                     </div>
-                    
+
                     <button type="submit" class="button button-white cta__form-btn">Отправить</button>
                 </form>
             </div>
@@ -329,59 +254,5 @@
     </div>
 </section>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer__content">
-            <!-- Логотип -->
-            <div class="footer__column footer__column--logo">
-                <a href="/" class="footer__logo-link">
-                    <img src="{{ asset('img/logo-color.svg') }}" alt="Логотип АРСКО" class="footer__logo-img">
-                </a>
-            </div>
-
-            <!-- О нашей компании -->
-            <div class="footer__column">
-                <h3 class="footer__title">О нашей Компании</h3>
-                <ul class="footer__menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Новости</a></li>
-                </ul>
-            </div>
-
-            <!-- Региональный оператор -->
-            <div class="footer__column">
-                <h3 class="footer__title">Региональный оператор строительства ИЖС и МКД</h3>
-                <ul class="footer__menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Новости</a></li>
-                </ul>
-            </div>
-
-            <!-- Строительство объектов -->
-            <div class="footer__column">
-                <h3 class="footer__title">Строительство объектов инфраструктуры</h3>
-                <ul class="footer__menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Новости</a></li>
-                </ul>
-            </div>
-
-            <!-- Контакты -->
-            <div class="footer__column footer__column--contacts">
-                <div class="footer__contact-item">
-                    <strong>Адрес:</strong> г. Курск, ул. Горького 50
-                </div>
-                <div class="footer__contact-item">
-                    <strong>Тел.:</strong> <a href="tel:+79999999999">+7 999 999 99 99</a>
-                </div>
-                <div class="footer__contact-item">
-                    <strong>Email:</strong> <a href="mailto:email@mail.ru">email@mail.ru</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-@include('allicon')
 @endsection
 

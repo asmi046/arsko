@@ -31,6 +31,23 @@
         height: 100vh;
     }
 
+    &.__page {
+        min-height: 200px;
+        color:white;
+        height: auto;
+        .container {
+            height: auto;
+        }
+
+        .header__page {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+    }
+
     // Навигация
     &__nav {
         display: flex;
@@ -337,6 +354,10 @@
 
         &__logo-img {
             height: 60px;
+        }
+
+        &.__page {
+            min-height: 250px;
         }
     }
 
