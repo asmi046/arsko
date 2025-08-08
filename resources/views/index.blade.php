@@ -233,6 +233,26 @@
     </div>
 </section>
 
+<section class="all-questions">
+    <div class="all-questions__content">
+        <!-- Левая часть с изображением -->
+        <div class="all-questions__left">
+            <div class="all-questions__icon-block">
+                <img src="{{ asset('img/ask.webp') }}" alt="Вопросы" class="all-questions__icon">
+            </div>
+        </div>
+
+        <!-- Правая часть с контентом -->
+        <div class="all-questions__right">
+            <h2 class="all-questions__title">ОТВЕТИМ НА ВСЕ <br>ВОПРОСЫ О ЖИЛЬЕ</h2>
+            <div class="all-questions__description text_styles">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах.
+            </div>
+            <a href="#" class="button button-white all-questions__btn">Узнать подробнее</a>
+        </div>
+    </div>
+</section>
+
 @include('allicon')
 @endsection
 
