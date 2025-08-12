@@ -9,6 +9,7 @@
 @use "form/all-form";
 @use "elements/all-elements";
 
+@use "cols";
 @use "current";
 @use "header";
 
@@ -19,6 +20,7 @@
 @use "all_questions";
 @use "partners";
 @use "cta";
+@use "contacts";
 
 // Схема с сайдбаром
 // @use "sidebar-schem";

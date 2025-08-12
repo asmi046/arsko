@@ -39,13 +39,13 @@
             <!-- Контакты -->
             <div class="footer__column footer__column--contacts">
                 <div class="footer__contact-item">
-                    <strong>Адрес:</strong> г. Курск, ул. Горького 50
+                    <strong>Адрес:</strong> {{ $contacts['adress']->value }}
                 </div>
                 <div class="footer__contact-item">
-                    <strong>Тел.:</strong> <a href="tel:+79999999999">+7 999 999 99 99</a>
+                    <strong>Тел.:</strong> <a href="tel:+7{{ phone_format($contacts['phone']->value) }}">{{ $contacts['phone']->value }}</a>
                 </div>
                 <div class="footer__contact-item">
-                    <strong>Email:</strong> <a href="mailto:email@mail.ru">email@mail.ru</a>
+                    <strong>Email:</strong> <a href="mailto:{{ $contacts['email']->value }}">{{ $contacts['email']->value }}</a>
                 </div>
             </div>
         </div>

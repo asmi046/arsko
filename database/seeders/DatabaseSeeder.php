@@ -17,6 +17,9 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             SeoDataSeeder::class,
+            ContactSeeder::class,
+            MenuSeeder::class,
+            ParametrSeeder::class,
         ]);
 
         // User::factory(10)->create();

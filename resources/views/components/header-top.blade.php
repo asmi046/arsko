@@ -7,10 +7,10 @@
 
             <div class="header__contacts">
                 <div class="header__contact-item">
-                    <a href="tel:+79999999999" class="header__contact-link">+7 999 999 99 99</a>
+                    <a href="tel:+7{{ phone_format($contacts['phone']->value) }}" class="header__contact-link">{{ $contacts['phone']->value }}</a>
                 </div>
                 <div class="header__contact-item">
-                    <a href="mailto:email@mail.ru" class="header__contact-link">email@mail.ru</a>
+                    <a href="mailto:{{ $contacts['email']->value }}" class="header__contact-link">{{ $contacts['email']->value }}</a>
                 </div>
                 <button class="button button-white header__contact-btn">Написать обращение</button>
             </div>
