@@ -12,7 +12,7 @@
                 <div class="header__contact-item">
                     <a href="mailto:{{ $contacts['email']->value }}" class="header__contact-link">{{ $contacts['email']->value }}</a>
                 </div>
-                <button class="button button-white header__contact-btn">Написать обращение</button>
+                <a href="#showModal" class="button button-white header__contact-btn">Написать обращение</a>
             </div>
 
             {{-- <x-burger-icon></x-burger-icon> --}}

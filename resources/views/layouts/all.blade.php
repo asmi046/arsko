@@ -38,5 +38,11 @@
     </main>
 
     <x-menues.side-menu></x-menues.side-menu>
+
+    <div class="modal_win" id="global_app">
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста" subtitle="Мы свяжемся с Вами в течении 15 минут"></modal-window>
+        <empty-modal hesh="cityselect" title="Выбор города" subtitle="Выберите город в котором вы проживаете">
+        </empty-modal>
+    </div>
 </body>
 </html>
