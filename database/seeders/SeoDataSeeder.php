@@ -17,26 +17,26 @@ class SeoDataSeeder extends Seeder
         $data = [
             [
                 'url' => "/",
-                'seo_title' => "Стоматология в Курске",
-                'seo_description' => "Стоматологическая клиника Dentalica в городе Курск. Все виды стоматологических услуг",
+                'seo_title' => "Региональный оператор строительства ИЖС и МКД",
+                'seo_description' => "Добро пожаловать на сайт Агентства развития строительства Курской области",
                 'page_title' => "",
             ],
             [
-                'url' => "page/politika-v-oblasti-obrabotki-personalnyx-dannyx",
-                'seo_title' => "Политика в области обработки персональных данных",
-                'seo_description' => "Политика в области обработки персональных данных",
+                'url' => "contacts",
+                'seo_title' => "Контакты нашей компании",
+                'seo_description' => "Контактная информация Агентства развития строительства Курской области",
                 'page_title' => "",
             ],
             [
-                'url' => "page/soglasie-na-obrabotku-personalnyx-dannyx",
-                'seo_title' => "Согласие на обработку персональных данных",
-                'seo_description' => "Согласие на обработку персональных данных",
+                'url' => "news",
+                'seo_title' => "Новости компании",
+                'seo_description' => "Последние новости Агентства развития строительства Курской области",
                 'page_title' => "",
             ],
             [
-                'url' => "page/o-failax-cookie",
-                'seo_title' => "Подробнее о файлах cookie",
-                'seo_description' => "Подробнее о файлах cookie",
+                'url' => "mips",
+                'seo_title' => "Победители МИП в Курской области",
+                'seo_description' => "Перечень проектов победивших в масштабном инвестиционном проекте в Курской области",
                 'page_title' => "",
             ],
         ];

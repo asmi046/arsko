@@ -13,8 +13,7 @@
             <div class="footer__column">
                 <h3 class="footer__title">О нашей Компании</h3>
                 <ul class="footer__menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Новости</a></li>
+                    <x-menues.puncts name="О компании в подвале"></x-menues.puncts>
                 </ul>
             </div>
 
@@ -22,8 +21,7 @@
             <div class="footer__column">
                 <h3 class="footer__title">Региональный оператор строительства ИЖС и МКД</h3>
                 <ul class="footer__menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Новости</a></li>
+                    <x-menues.puncts name="Региональный оператор в подвале"></x-menues.puncts>
                 </ul>
             </div>
 
@@ -31,8 +29,7 @@
             <div class="footer__column">
                 <h3 class="footer__title">Строительство объектов инфраструктуры</h3>
                 <ul class="footer__menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Новости</a></li>
+                    <x-menues.puncts name="Строительство в подвале"></x-menues.puncts>
                 </ul>
             </div>
 

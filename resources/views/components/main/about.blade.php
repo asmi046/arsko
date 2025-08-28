@@ -1,4 +1,4 @@
-<section class="about">
+<section id="about" class="about">
     <div class="container">
         <div class="about__wrapper">
             <h2 class="about__title">{{ $parametrs['about_title']->value }}</h2>

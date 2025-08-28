@@ -52,6 +52,18 @@ class NewsSeeder extends Seeder
             ],
         ];
 
-        DB::table('news')->insert($data);
+        foreach ($data as $item) {
+            DB::table('news')->insert($item);
+
+
+            DB::table("seo_data")->insert(
+                [
+                    'url' => 'news/'.$item['slug'],
+                    'seo_title' => $item['title'],
+                    'seo_description' => $item['title'],
+
+                ]
+            );
+        }
     }
 }
