@@ -3,22 +3,19 @@
 namespace App\View\Components;
 
 use Closure;
-use App\Models\Parametr;
+use App\Models\News;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Facades\Cache;
 
-class HeaderMain extends Component
+class NewsInMain extends Component
 {
-    public $parametrs;
+    public $news;
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        $this->parametrs = Cache::rememberForever('main_banner_info', function () {
-            return Parametr::where('section', 'Баннер главной')->get()->keyBy('str_id');
-        });
+        $this->news = News::latest()->take(3)->get();
     }
 
     /**
@@ -26,6 +23,6 @@ class HeaderMain extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.header-main');
+        return view('components.news-in-main');
     }
 }
