@@ -14,7 +14,13 @@
 
     <section>
         <div class="container">
-
+            <x-breadcrumbs.main title="Новости"></x-breadcrumbs.main>
+                <div class="news-list">
+                        @foreach($news as $item)
+                            <x-cards.news-in-page :item="$item"></x-cards.news-in-page>
+                        @endforeach
+                </div>
+            <x-pagination :tovars="$news"></x-pagination>
         </div>
     </section>
 @endsection

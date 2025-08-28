@@ -16,7 +16,8 @@
 
     <section>
         <div class="container">
-                        <div class="page_content contacts_page_section">
+            <x-breadcrumbs.main :title="'Контакты'"></x-breadcrumbs.main>
+            <div class="page_content contacts_page_section">
                 <div class="content">
                     <div class="colls">
                         <div class="col">

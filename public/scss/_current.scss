@@ -60,6 +60,16 @@ img {
     }
 }
 
+.uni_breadcrumbs {
+    a{
+        color:$main_color;
+        &:hover{
+            color:$hover_color;
+            text-decoration: underline;
+        }
+    }
+}
+
 @media (max-width: 1440px) {
     .container {
         width: 96%;

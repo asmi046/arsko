@@ -21,7 +21,7 @@ class NewsSeeder extends Seeder
             [
                 'title' => "Жилищное строительство в Курской области для обеспечения жителей приграничья",
                 'slug' => "zhilichnoe-stroitelstvo-v-kurskoy-oblasti",
-                'text' => "В Курской области активно развивается жилищное строительство, направленное на обеспечение комфортными условиями жизни жителей приграничья.",
+                'text' => file_get_contents(public_path('tmp_data/news/news_1.html')),
                 'img' => "news/all_q.webp",
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -29,7 +29,7 @@ class NewsSeeder extends Seeder
             [
                 'title' => "Новые социальные объекты открылись в приграничных районах",
                 'slug' => "novye-socialnye-obekty-v-prigranichnyh-rayonah",
-                'text' => "В приграничных районах Курской области открылись новые школы и медицинские учреждения для повышения качества жизни населения.",
+                'text' => file_get_contents(public_path('tmp_data/news/news_2.html')),
                 'img' => "news/all_q.webp",
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -37,7 +37,7 @@ class NewsSeeder extends Seeder
             [
                 'title' => "Поддержка сельского хозяйства в Курской области",
                 'slug' => "podderzhka-selskogo-hozyaystva-v-kurskoy-oblasti",
-                'text' => "Власти региона реализуют программы поддержки фермеров и сельхозпредприятий для развития аграрного сектора.",
+                'text' => file_get_contents(public_path('tmp_data/news/news_3.html')),
                 'img' => "news/all_q.webp",
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -45,12 +45,11 @@ class NewsSeeder extends Seeder
             [
                 'title' => "Развитие транспортной инфраструктуры в регионе",
                 'slug' => "razvitie-transportnoy-infrastruktury-v-regione",
-                'text' => "В Курской области ведутся работы по модернизации дорог и транспортных узлов для улучшения логистики и безопасности.",
+                'text' => file_get_contents(public_path('tmp_data/news/news_4.html')),
                 'img' => "news/all_q.webp",
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-
         ];
 
         DB::table('news')->insert($data);
