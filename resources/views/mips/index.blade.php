@@ -15,10 +15,10 @@
     <section>
         <div class="container">
             <x-breadcrumbs.main title="Победители МИП"></x-breadcrumbs.main>
-                <div class="news-list">
-                        @foreach($mips as $item)
-                            <x-cards.mip :item="$item"></x-cards.mip>
-                        @endforeach
+                <div class="mip-list">
+                    @foreach($mips as $item)
+                        <x-cards.mip :item="$item"></x-cards.mip>
+                    @endforeach
                 </div>
             <x-pagination :tovars="$mips"></x-pagination>
         </div>

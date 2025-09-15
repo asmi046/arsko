@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             MenuSeeder::class,
             ParametrSeeder::class,
             UserSeeder::class,
+            MipSeeder::class,
         ]);
 
         // User::factory(10)->create();

@@ -146,6 +146,19 @@
     }
 }
 
+.mip-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+
+    .mip-card {
+        width: 48%;
+        height: auto;
+    }
+}
+
 // Элементы управления слайдером (универсальные)
 .slider-control {
     width: 38px;
@@ -319,7 +332,14 @@
         }
     }
 
+    .mip-list {
+        .mip-card {
+            width: 100%;
+        }
+    }
+
     .mip-card {
+
         &__image {
             height: 180px;
         }

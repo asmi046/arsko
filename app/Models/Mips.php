@@ -9,6 +9,7 @@ class Mips extends Model
     protected $fillable = [
         'title',
         'cover',
+        'slug',
         'map',
         'geo',
         'description',

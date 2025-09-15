@@ -3,6 +3,7 @@
 namespace App\View\Components\Main;
 
 use Closure;
+use App\Models\Mips;
 use App\Models\Parametr;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
@@ -11,6 +12,7 @@ use Illuminate\Support\Facades\Cache;
 class Mip extends Component
 {
     public $parametrs;
+    public $mips;
 
     /**
      * Create a new component instance.
@@ -20,6 +22,8 @@ class Mip extends Component
         $this->parametrs = Cache::rememberForever('main_mip_info', function () {
             return Parametr::where('section', 'Участники МИП')->get()->keyBy('str_id');
         });
+
+        $this->mips = Mips::all();
     }
 
     /**

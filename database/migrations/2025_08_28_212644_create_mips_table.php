@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('mips', function (Blueprint $table) {
             $table->id();
             $table->string('title')->comment('Название проекта');
+            $table->string('slug')->unique()->comment('Слаг для ссылки');
             $table->string('cover')->comment('Обложка');
             $table->string('map')->nullable()->comment('Карта');
             $table->string('geo')->nullable()->comment('Геопозиция');
