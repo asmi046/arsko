@@ -33,7 +33,7 @@
         "optimize": "ssh user@109.172.39.139 \"cd web/арско.рф/public_html && php artisan optimize\"",
         "optimize_all": "npm run optimize && npm run cache_clear && npm run cache_view && npm run cache_route && npm run cache_config",
         "orchid_user": "ssh user@109.172.39.139 \"cd web/арско.рф/public_html && php artisan orchid:admin admin asmi046@gmail.com 123\"",
-        "deploy_m": "vite build && npm run send_vite_build_tar && npm run pull_rep && npm run optimize_all && npm run chmode"
+        "deploy_m": "vite build && npm run send_vite_build && npm run pull_rep && npm run optimize_all && npm run chmode"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
