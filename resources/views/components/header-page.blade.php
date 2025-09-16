@@ -1,9 +1,10 @@
 @props([
     'title' => 'Страница',
     'subtitle' => null,
+    'img' => isset($img) ? $img : asset('img/page.jpg')
 ])
 
-<header class="header __page" style="background-image: url({{ asset('img/page.jpg') }});">
+<header class="header __page" style="background-image: url({{ $img }});">
     <div class="container">
 
         <x-header-top></x-header-top>

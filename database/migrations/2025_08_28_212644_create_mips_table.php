@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title')->comment('Название проекта');
             $table->string('slug')->unique()->comment('Слаг для ссылки');
             $table->string('cover')->comment('Обложка');
+            $table->string('head_img')->nullable()->comment('Главное изображение');
             $table->string('map')->nullable()->comment('Карта');
             $table->string('geo')->nullable()->comment('Геопозиция');
             $table->text('description')->nullable()->comment('Описание проекта');

@@ -1,4 +1,4 @@
-<div class="mip-card">
+<a href="{{ route('mips.page', $item->slug) }}" class="mip-card">
     <div class="mip-card__image">
         <img src="{{ Storage::url($item->cover) }}" alt="{{ $item->title }}" class="mip-card__photo">
     </div>
@@ -24,4 +24,4 @@
             <button class="button mip-card__btn">Подробнее</button>
         </div>
     </div>
-</div>
+</a>

@@ -30,3 +30,31 @@
         border-color: $main_color;
     }
 }
+
+.presentation_button {
+    background-color: $sub_color;
+    color: white;
+    border: 1px solid $sub_color;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100px;
+    align-items: center;
+    gap: 10px;
+    border-radius: $border_rad;
+    padding: 20px 60px;
+
+    .sprite_icon {
+        width: 47px;
+        height: 47px;
+        fill: white;
+        margin: 0;
+        display: inline-block;
+    }
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+        border-color: $main_color;
+    }
+}
+

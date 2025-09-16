@@ -9,6 +9,7 @@ use MoonShine\MenuManager\MenuItem;
 use App\MoonShine\Resources\ContactResource;
 use App\MoonShine\Resources\SeoDataResource;
 use App\MoonShine\Resources\MenuResource;
+use App\MoonShine\Resources\ParametrResource;
 
 use MoonShine\Laravel\Layouts\AppLayout;
 use MoonShine\ColorManager\ColorManager;
@@ -36,6 +37,8 @@ use MoonShine\UI\Components\{Breadcrumbs,
     Layout\TopBar,
     Layout\Wrapper,
     When};
+use App\MoonShine\Resources\NewsResource;
+use App\MoonShine\Resources\PartnersResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -52,6 +55,9 @@ final class MoonShineLayout extends AppLayout
             MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
             MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
             MenuItem::make('SEO', SeoDataResource::class,)->icon('chart-bar-square'),
+            MenuItem::make('Параметры сайта', ParametrResource::class)->icon('cube'),
+            MenuItem::make('Новости', NewsResource::class)->icon('calendar-days'),
+            MenuItem::make('Партнеры', PartnersResource::class)->icon('chat-bubble-left-right'),
             ...parent::menu(),
         ];
     }

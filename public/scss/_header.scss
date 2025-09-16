@@ -348,6 +348,11 @@
 
 @media (max-width: 480px) {
     .header {
+        min-height: auto;
+        padding-bottom: 20px;
+        .container {
+            height: auto;
+        }
         &__title {
             font-size: 24px;
         }
@@ -357,7 +362,10 @@
         }
 
         &.__page {
-            min-height: 250px;
+            h1 {
+                font-size: 36px;
+                line-height: 1.2;
+            }
         }
     }
 

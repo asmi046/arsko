@@ -3,6 +3,7 @@
 @php
     $title = "";
     $description = "";
+
 @endphp
 
 
@@ -10,6 +11,7 @@
     <x-header-page
     title="Победители МИП"
     subtitle="Проекты прошедшие в масштабный инвестиционный проект (МИП)"
+    :img="asset('img/all-mip.jpg')"
     ></x-header-page>
 
     <section>
