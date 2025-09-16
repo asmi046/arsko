@@ -3,7 +3,7 @@
 namespace App\View\Components\Main;
 
 use Closure;
-use App\Models\Mips;
+use App\Models\Mip as Mips;
 use App\Models\Parametr;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
