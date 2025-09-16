@@ -17,6 +17,7 @@ use MoonShine\Laravel\DependencyInjection\MoonShineConfigurator;
 use MoonShine\Contracts\Core\DependencyInjection\ConfiguratorContract;
 use App\MoonShine\Resources\NewsResource;
 use App\MoonShine\Resources\PartnersResource;
+use App\MoonShine\Resources\MipResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -37,6 +38,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 ParametrResource::class,
                 NewsResource::class,
                 PartnersResource::class,
+                MipResource::class,
             ])
             ->pages([
                 ...$config->getPages(),

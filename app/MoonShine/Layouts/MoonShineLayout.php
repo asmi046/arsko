@@ -39,6 +39,7 @@ use MoonShine\UI\Components\{Breadcrumbs,
     When};
 use App\MoonShine\Resources\NewsResource;
 use App\MoonShine\Resources\PartnersResource;
+use App\MoonShine\Resources\MipResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -58,7 +59,9 @@ final class MoonShineLayout extends AppLayout
             MenuItem::make('Параметры сайта', ParametrResource::class)->icon('cube'),
             MenuItem::make('Новости', NewsResource::class)->icon('calendar-days'),
             MenuItem::make('Партнеры', PartnersResource::class)->icon('chat-bubble-left-right'),
+            MenuItem::make('Участники МИП', MipResource::class)->icon('briefcase'),
             ...parent::menu(),
+
         ];
     }
 
