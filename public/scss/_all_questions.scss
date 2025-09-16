@@ -124,6 +124,7 @@
 
 @media (max-width: 768px) {
     .all-questions {
+        min-height: unset;
         &__left {
             height: 200px;
         }
@@ -132,6 +133,7 @@
             width: unset;
             padding: 40px 20px;
             gap: 25px;
+
         }
 
         &__title {

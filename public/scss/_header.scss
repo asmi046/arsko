@@ -354,7 +354,7 @@
             height: auto;
         }
         &__title {
-            font-size: 24px;
+            font-size: 22px;
         }
 
         &__logo-img {
@@ -367,13 +367,16 @@
                 line-height: 1.2;
             }
         }
-    }
 
-    .news-card {
-        padding: 12px;
+        .news-card {
+            padding: 12px;
 
-        &__title {
-            font-size: 13px;
+            &__title {
+                font-size: 16px;
+                font-weight: 400;
+            }
         }
     }
+
+
 }
