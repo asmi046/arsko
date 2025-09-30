@@ -29,7 +29,7 @@ class MenuSeeder extends Seeder
             ],
             [
                 'menu_name' => 'Главное меню',
-                'title' => 'Участники МИП',
+                'title' => 'Участки МИП',
                 'order' => 2,
                 'lnk' => "/mips",
             ],
@@ -62,6 +62,13 @@ class MenuSeeder extends Seeder
                 'title' => 'Новости',
                 'order' => 3,
                 'lnk' => "/news",
+            ],
+
+            [
+                'menu_name' => 'О компании в подвале',
+                'title' => 'Контакты',
+                'order' => 4,
+                'lnk' => "/contacts",
             ],
         ];
 

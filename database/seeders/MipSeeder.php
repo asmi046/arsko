@@ -19,6 +19,7 @@ class MipSeeder extends Seeder
         Storage::disk('public')->put("mip/mip2.webp", file_get_contents(public_path('tmp_data/mip/mip2.webp')), 'public');
         Storage::disk('public')->put("mip/map_2.webp", file_get_contents(public_path('tmp_data/mip/map_2.webp')), 'public');
         Storage::disk('public')->put("mip/head-top-mip2.jpg", file_get_contents(public_path('tmp_data/mip/head-top-mip2.jpg')), 'public');
+        Storage::disk('public')->put("mip/head-top-mip1.jpg", file_get_contents(public_path('tmp_data/mip/head-top-mip1.jpg')), 'public');
 
         Storage::disk('public')->put("mip/mip_1.pdf", file_get_contents(public_path('tmp_data/mip/mip_1.pdf')), 'public');
         Storage::disk('public')->put("mip/mip_2.pdf", file_get_contents(public_path('tmp_data/mip/mip_2.pdf')), 'public');
@@ -56,7 +57,10 @@ class MipSeeder extends Seeder
             [
                 'title' => "Земельный участок в г. Курчатов",
                 'slug' => "zemelnyy-uchastok-v-g-kurchatov",
+                'developer' => "АО «Курский завод КПД им. А.Ф. Дериглазова»",
+                'develop_type' => "Малоэтажная и среднеэтажная застройка",
                 'cover' => "mip/mip1.webp",
+                'head_img' => "mip/head-top-mip1.jpg",
                 'map' => "mip/map_1.webp",
                 'geo' => "51.664617, 35.688927",
                 'description' => file_get_contents(public_path('tmp_data/mip/mip_1.html')),
@@ -108,6 +112,8 @@ class MipSeeder extends Seeder
             [
                 'title' => "Земельный участок Фатежском районе",
                 'slug' => "zemelnyy-uchastok-fatezhskom-rayone",
+                'developer' => "ООО «Профит Гудс»",
+                'develop_type' => "Строительство ИЖС",
                 'cover' => "mip/mip2.webp",
                 'head_img' => "mip/head-top-mip2.jpg",
                 'map' => "mip/map_2.webp",

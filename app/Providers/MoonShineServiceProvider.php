@@ -5,19 +5,20 @@ declare(strict_types=1);
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\MoonShine\Resources\MipResource;
 use App\MoonShine\Resources\MenuResource;
+use App\MoonShine\Resources\NewsResource;
+use App\MoonShine\Resources\PageResource;
 use App\MoonShine\Resources\ContactResource;
 use App\MoonShine\Resources\SeoDataResource;
 use App\MoonShine\Resources\ParametrResource;
+use App\MoonShine\Resources\PartnersResource;
 use App\MoonShine\Resources\MoonShineUserResource;
 use MoonShine\Laravel\DependencyInjection\MoonShine;
 use App\MoonShine\Resources\MoonShineUserRoleResource;
 use MoonShine\Contracts\Core\DependencyInjection\CoreContract;
 use MoonShine\Laravel\DependencyInjection\MoonShineConfigurator;
 use MoonShine\Contracts\Core\DependencyInjection\ConfiguratorContract;
-use App\MoonShine\Resources\NewsResource;
-use App\MoonShine\Resources\PartnersResource;
-use App\MoonShine\Resources\MipResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -30,6 +31,7 @@ class MoonShineServiceProvider extends ServiceProvider
     {
         $core
             ->resources([
+                PageResource::class,
                 ContactResource::class,
                 MoonShineUserResource::class,
                 MoonShineUserRoleResource::class,

@@ -45,6 +45,7 @@ class PartnersResource extends ModelResource
         return [
             Text::make('Наименование партнера', 'name'),
             Image::make('Логотип партнера', 'logo')->dir(''),
+            Text::make('Ссылка', 'lnk'),
             Number::make('Порядок вывода', 'sort_order'),
         ];
     }
@@ -57,6 +58,7 @@ class PartnersResource extends ModelResource
         return [
             Text::make('Наименование партнера', 'name'),
             Image::make('Логотип партнера', 'logo')->dir(''),
+            Text::make('Ссылка', 'lnk'),
             Number::make('Порядок вывода', 'sort_order'),
         ];
     }

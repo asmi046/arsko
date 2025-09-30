@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\MipController;
-use App\Http\Controllers\NewsController;
-use App\Http\Controllers\ContactsController;
+    use App\Http\Controllers\MipController;
+    use App\Http\Controllers\NewsController;
+    use App\Http\Controllers\ContactsController;
     use Illuminate\Support\Facades\Route;
 
     use App\Http\Controllers\IndexController;
+    use App\Http\Controllers\Page\PageController;
 
     Route::get('/', [IndexController::class, "index"])->name('home');
     Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');
@@ -15,3 +16,5 @@ use App\Http\Controllers\ContactsController;
 
     Route::get('/mips', [MipController::class, "index"])->name('mips');
     Route::get('/mips/{slug}', [MipController::class, "page"])->name('mips.page');
+
+    Route::get('/page/{slug}', [PageController::class, "index"])->name('page');

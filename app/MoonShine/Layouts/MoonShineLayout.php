@@ -10,6 +10,7 @@ use App\MoonShine\Resources\ContactResource;
 use App\MoonShine\Resources\SeoDataResource;
 use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\ParametrResource;
+use App\MoonShine\Resources\PageResource;
 
 use MoonShine\Laravel\Layouts\AppLayout;
 use MoonShine\ColorManager\ColorManager;
@@ -59,7 +60,8 @@ final class MoonShineLayout extends AppLayout
             MenuItem::make('Параметры сайта', ParametrResource::class)->icon('cube'),
             MenuItem::make('Новости', NewsResource::class)->icon('calendar-days'),
             MenuItem::make('Партнеры', PartnersResource::class)->icon('chat-bubble-left-right'),
-            MenuItem::make('Участники МИП', MipResource::class)->icon('briefcase'),
+            MenuItem::make('Участки МИП', MipResource::class)->icon('briefcase'),
+            MenuItem::make("Страницы", PageResource::class)->icon('document-text'),
             ...parent::menu(),
 
         ];

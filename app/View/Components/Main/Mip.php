@@ -20,7 +20,7 @@ class Mip extends Component
     public function __construct()
     {
         $this->parametrs = Cache::rememberForever('main_mip_info', function () {
-            return Parametr::where('section', 'Участники МИП')->get()->keyBy('str_id');
+            return Parametr::where('section', 'Участки МИП')->get()->keyBy('str_id');
         });
 
         $this->mips = Mips::all();

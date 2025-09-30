@@ -27,6 +27,8 @@ return new class extends Migration
             $table->integer('urban_potential')->comment('Градостроительный потенциал');
             $table->string('max_floors')->comment('Допустимая этажность');
             $table->integer('build_percent')->comment('Процент застройки');
+            $table->string('developer')->nullable()->comment('Застройщик');
+            $table->string('develop_type')->nullable()->comment('тип застройки');
             $table->string('ownership')->comment('Собственность');
             $table->string('land_category')->nullable()->comment('Категория земель');
             $table->string('functional_zone')->nullable()->comment('Функциональная зона');

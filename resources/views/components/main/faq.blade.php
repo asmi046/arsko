@@ -13,7 +13,7 @@
             <div class="all-questions__description text_styles">
                 {!! $parametrs['q_text']->value !!}
             </div>
-            <a href="#" class="button button-white all-questions__btn">Узнать подробнее</a>
+            <a href="https://спроси.дом.рф/" class="button button-white all-questions__btn">Узнать подробнее</a>
         </div>
     </div>
 </section>

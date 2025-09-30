@@ -19,7 +19,7 @@
 
             <!-- Региональный оператор -->
             <div class="footer__column">
-                <h3 class="footer__title">Региональный оператор строительства ИЖС и МКД</h3>
+                <h3 class="footer__title">Специализированный застройщик</h3>
                 <ul class="footer__menu">
                     <x-menues.puncts name="Региональный оператор в подвале"></x-menues.puncts>
                 </ul>

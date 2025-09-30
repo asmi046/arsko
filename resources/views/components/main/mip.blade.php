@@ -21,7 +21,7 @@
         <!-- Управление слайдером -->
         <div class="mip__controls">
             <div class="mip__controls-left">
-                <a href="{{ route('mips') }}" class="button button-white">Смотреть все объекты</a>
+                <a href="https://xn--i1ajfdf.xn--j1aarei.xn--p1ai/page-419485.html" class="button button-white">Смотреть все объекты</a>
             </div>
             <div class="mip__controls-right">
                 <button class="slider-control slider-control--prev" type="button" aria-label="Предыдущий слайд">

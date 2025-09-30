@@ -26,7 +26,7 @@ class MipResource extends ModelResource
 {
     protected string $model = Mip::class;
 
-    protected string $title = 'Участники МИП';
+    protected string $title = 'Участки МИП';
     protected string $column = 'title';
 
     /**

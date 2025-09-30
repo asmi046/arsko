@@ -20,23 +20,27 @@ class PartnersSeeder extends Seeder
 
         DB::table('partners')->insert([
             [
-                'name' => 'Администрация Курской области',
+                'name' => 'Министерство имущества Курской области',
                 'logo' => 'partners/adm_ko.svg',
+                'lnk' => 'https://imkursk.ru/',
                 'sort_order' => 1,
             ],
             [
                 'name' => 'Единый институт развития ДОМ.РФ',
                 'logo' => 'partners/dom_rf.svg',
+                'lnk' => 'https://дом.рф/',
                 'sort_order' => 2,
             ],
             [
-                'name' => 'Администрация Курской области',
+                'name' => 'Министерство строительства Курской области',
                 'logo' => 'partners/adm_ko.svg',
+                'lnk' => 'https://строй.курск.рф/',
                 'sort_order' => 3,
             ],
             [
-                'name' => 'Единый институт развития ДОМ.РФ',
-                'logo' => 'partners/dom_rf.svg',
+                'name' => 'Правительство Курской области',
+                'logo' => 'partners/adm_ko.svg',
+                'lnk' => 'https://kursk.ru/',
                 'sort_order' => 4,
             ],
         ]);

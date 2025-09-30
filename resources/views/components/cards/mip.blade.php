@@ -14,6 +14,12 @@
             <li class="mip-card__param">
                 <strong>Собственность</strong> {{ $item->ownership }}
             </li>
+            <li class="mip-card__param">
+                <strong>Застройщик</strong> {{ $item->developer }}
+            </li>
+            <li class="mip-card__param">
+                <strong>Тип застройки</strong> {{ $item->develop_type }}
+            </li>
         </ul>
         <div class="mip-card__info">
             <div class="mip-card__area">

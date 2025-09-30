@@ -43,6 +43,19 @@
                             <h2>Главный офис</h2>
                             <p class="param">Адрес: {{ $contacts['adress'] }}</p>
                             <p class="param">Режим работы: {{ $contacts['work_time'] }}</p>
+                            <br>
+                            <div class="social">
+                                <a href="{{ $contacts['tg_lnk'] }}">
+                                    <svg class="sprite_icon">
+                                        <use xlink:href="#tg_icon"></use>
+                                    </svg>
+                                </a>
+                                <a href="{{ $contacts['ws_lnk'] }}">
+                                    <svg class="sprite_icon">
+                                        <use xlink:href="#ws_icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
 

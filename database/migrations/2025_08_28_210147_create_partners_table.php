@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('partners', function (Blueprint $table) {
             $table->id();
             $table->string('name')->comment('Наименование партнера');
+            $table->string('lnk')->default('#')->comment('Ссылка на партнера');
             $table->string('logo')->comment('Логотип партнера');
             $table->integer('sort_order')->default(100)->comment('Порядок вывода');
             $table->timestamps();

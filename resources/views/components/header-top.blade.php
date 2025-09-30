@@ -10,6 +10,9 @@
                     <a href="tel:+7{{ phone_format($contacts['phone']->value) }}" class="header__contact-link">{{ $contacts['phone']->value }}</a>
                 </div>
                 <div class="header__contact-item">
+                    <a href="tel:+7{{ phone_format($contacts['phone_2']->value) }}" class="header__contact-link">{{ $contacts['phone_2']->value }}</a>
+                </div>
+                <div class="header__contact-item">
                     <a href="mailto:{{ $contacts['email']->value }}" class="header__contact-link">{{ $contacts['email']->value }}</a>
                 </div>
                 <a href="#showModal" class="button button-white header__contact-btn">Написать обращение</a>

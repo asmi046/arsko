@@ -9,6 +9,7 @@ class Partners extends Model
     protected $fillable = [
         'name',
         'logo',
+        'lnk',
         'sort_order',
     ];
 }

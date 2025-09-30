@@ -70,6 +70,16 @@ img {
     }
 }
 
+.social {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    .sprite_icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 @media (max-width: 1440px) {
     .container {
         width: 96%;

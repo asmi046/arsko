@@ -13,6 +13,8 @@ class Mip extends Model
         'map',
         'geo',
         'description',
+        'developer',
+        'develop_type',
         'presentation',
         'cadastral_number',
         'address',

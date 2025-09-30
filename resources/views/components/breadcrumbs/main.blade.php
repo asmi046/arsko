@@ -31,8 +31,8 @@
             @elseif (Request::route()->named('mips.page'))
                 <span class="sep"> / </span>
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a title="Участники МИП" itemprop="item" href="{{route('mips')}}">
-                        <span itemprop="name">Участники МИП</span>
+                    <a title="Участки МИП" itemprop="item" href="{{route('mips')}}">
+                        <span itemprop="name">Участки МИП</span>
                         <meta itemprop="position" content="1">
                     </a>
                 </span>

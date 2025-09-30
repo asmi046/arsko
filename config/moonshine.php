@@ -20,7 +20,7 @@ use MoonShine\Laravel\Pages\LoginPage;
 use MoonShine\Laravel\Pages\ProfilePage;
 
 return [
-    'title' => env('MOONSHINE_TITLE', 'Региональный оператор строительства ИЖС и МКД'),
+    'title' => env('MOONSHINE_TITLE', 'Агентство развития строительства Курской Области'),
     'logo' => 'img/logo_adm.svg',
     'logo_small' => 'img/logo_adm.svg',
 
