@@ -10,6 +10,10 @@
         box-shadow: $box_shadow;
         min-height: 500px;
         background-color: $main_color;
+
+        .checbox_label span a {
+            color:white;
+        }
     }
 
     // Левая часть с формой

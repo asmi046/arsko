@@ -12,6 +12,13 @@
         padding-left: 20px;
     }
 
+    a {
+        color:$main_color;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
     ol{
         counter-reset: my-numbers;
         padding-left: 20px;

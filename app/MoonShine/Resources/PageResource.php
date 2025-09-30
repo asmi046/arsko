@@ -66,7 +66,7 @@ class PageResource extends ModelResource
                     Slug::make("Ссылка", 'slug'),
                     BelongsTo::make("Родительская", 'parent_page', formatted: 'title', resource: PageResource::class),
                     Text::make("Шаблон", 'template'),
-                    TinyMce::make('Описание', 'description'),
+                    TinyMce::make('Описание', 'description')->addOption('file_manager', 'laravel-filemanager'),
                 ]),
                 Tab::make('Изображения', [
                     Image::make("Картинка", 'img')->dir('page')->removable(),

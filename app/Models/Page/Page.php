@@ -2,10 +2,11 @@
 
 namespace App\Models\Page;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
+use App\Models\SeoData;
 use Illuminate\Support\Str;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Page extends Model
 {

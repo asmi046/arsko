@@ -1,15 +1,15 @@
 @extends('layouts.all')
 
-@php
-    $title = (empty($page->seo_title))?$page->title:$page->seo_title;
-    $description = (empty($page->seo_description))?$page->title:$page->seo_description;;
-@endphp
-
-@section('title', $title)
-@section('description', $description)
-
 @section('main')
-    <h1>{{$page->title}}</h1>
-    {!! $page->description !!}
+    <x-header-page
+    :title="$page->title"
+    ></x-header-page>
+
+    <section>
+        <div class="container text_styles">
+            <x-breadcrumbs.main :title="$page->title"></x-breadcrumbs.main>
+            {!! $page->description !!}
+        </div>
+    </section>
 @endsection
 

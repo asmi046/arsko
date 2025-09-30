@@ -55,7 +55,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'О компании в подвале',
                 'title' => 'О нас',
                 'order' => 1,
-                'lnk' => route('home').'/#about',
+                'lnk' => '/page/o-nas',
             ],
             [
                 'menu_name' => 'О компании в подвале',
@@ -70,6 +70,13 @@ class MenuSeeder extends Seeder
                 'order' => 4,
                 'lnk' => "/contacts",
             ],
+
+            [
+                'menu_name' => 'О компании в подвале',
+                'title' => 'НПА',
+                'order' => 5,
+                'lnk' => "/page/npa",
+            ],
         ];
 
         DB::table("menus")->insert($footer_menu);
@@ -79,32 +86,27 @@ class MenuSeeder extends Seeder
 
             [
                 'menu_name' => 'Региональный оператор в подвале',
-                'title' => 'Участки под строительство',
+                'title' => 'Готовое жилье',
                 'order' => 20,
-                'lnk' => "#",
-            ],
-            [
-                'menu_name' => 'Региональный оператор в подвале',
-                'title' => 'Подрядные организации',
-                'order' => 30,
-                'lnk' => "#",
-            ],
-            [
-                'menu_name' => 'Региональный оператор в подвале',
-                'title' => 'Готовые объекты недвижимости',
-                'order' => 40,
-                'lnk' => "#",
+                'lnk' => "https://www.gosuslugi.ru/landing/122kursk",
             ],
             [
                 'menu_name' => 'Региональный оператор в подвале',
                 'title' => 'Льготная ипотека под 2%',
                 'order' => 50,
-                'lnk' => "#",
+                'lnk' => "https://спроси.дом.рф/instructions/lgotnaya-ipoteka-2-dlya-zhiteley-kurskoy-i-belgorodskoy-oblastey/",
+            ],
+
+            [
+                'menu_name' => 'Региональный оператор в подвале',
+                'title' => 'Участники строительного рынка',
+                'order' => 20,
+                'lnk' => "/page/ucastniki-stroitelnogo-rynka",
             ],
             [
                 'menu_name' => 'Региональный оператор в подвале',
-                'title' => 'Нормативно правовые акты',
-                'order' => 60,
+                'title' => 'Участки под строительство',
+                'order' => 30,
                 'lnk' => "#",
             ],
         ];
@@ -117,14 +119,9 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Строительство в подвале',
                 'title' => 'Региональный оператор КРТ',
                 'order' => 10,
-                'lnk' => "#",
+                'lnk' => "/page/regionalnyi-operator-krt",
             ],
-            [
-                'menu_name' => 'Строительство в подвале',
-                'title' => 'Контакты',
-                'order' => 20,
-                'lnk' => "/contacts",
-            ],
+
         ];
 
         DB::table("menus")->insert($footer_menu_3);
