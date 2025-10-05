@@ -110,7 +110,7 @@ class MipSeeder extends Seeder
             ],
 
             [
-                'title' => "Земельный участок Фатежском районе",
+                'title' => "Земельный участок в Фатежском районе",
                 'slug' => "zemelnyy-uchastok-fatezhskom-rayone",
                 'developer' => "ООО «Профит Гудс»",
                 'develop_type' => "Строительство ИЖС",
@@ -130,7 +130,7 @@ class MipSeeder extends Seeder
                 'land_category' => "Земли населенных пунктов",
                 'functional_zone' => "Ж1*",
                 'usage_type' => "для индивидуального жилищного строительства",
-                'special_usage' => file_get_contents(public_path('tmp_data/mip/mip_1_z.html')),
+                'special_usage' => file_get_contents(public_path('tmp_data/mip/mip_2_z.html')),
                 'encumbrance' => "не зарегистрированы",
                 'gallery' => json_encode([
                     ['img' => "mip/m2_gal/mip_2.pdf-image-000.jpg", 'title' => "Галерея 1"],

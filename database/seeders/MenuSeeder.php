@@ -25,7 +25,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'О нас',
                 'order' => 1,
-                'lnk' => route('home').'/#about',
+                'lnk' => '/page/o-nas',
             ],
             [
                 'menu_name' => 'Главное меню',

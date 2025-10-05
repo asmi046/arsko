@@ -33,6 +33,11 @@
 
                             <p class="label">Генеральный директор:</p>
                             <p class="param">{{ $contacts['person'] }}</p>
+
+                            <p class="label">Карточка контрагента:</p>
+                            <p>
+                                <a href="{{ asset('partner_kard.doc') }}">Скачать карточки партнера</a>
+                            </p>
                         </div>
 
                         <div class="col">

@@ -13,7 +13,7 @@
         <img src="{{ asset('img/about.jpg') }}" alt="О нас" class="about__image-photo">
         <div class="about__promo">
             <p class="about__promo-text">Мы строим <br>будущее!</p>
-            <button class="button button-white about__promo-btn">Задать вопрос</button>
+            <a href="#showModal" class="button button-white about__promo-btn">Задать вопрос</a>
         </div>
     </div>
 </section>
