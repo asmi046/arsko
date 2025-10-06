@@ -101,7 +101,7 @@ class ParametrSeeder extends Seeder
                 'section' => "Вопросы о жилье",
 
                 'title' => "",
-                'value' => "ОТВЕТИМ НА ВСЕ<br/>ВОПРОСЫ О ЖИЛЬЕ",
+                'value' => "ОТВЕТИМ НА ВСЕ <br/>ВОПРОСЫ О ЖИЛЬЕ",
                 'img' => null,
             ],
             [

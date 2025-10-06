@@ -15,7 +15,7 @@ class NewsInMain extends Component
      */
     public function __construct()
     {
-        $this->news = News::latest()->take(3)->get();
+        $this->news = News::orderBy('created_at', 'desc')->take(3)->get();
     }
 
     /**
