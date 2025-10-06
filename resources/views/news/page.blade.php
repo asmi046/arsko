@@ -12,7 +12,7 @@
     ></x-header-page>
 
     <section>
-        <div class="container text-styles news-page">
+        <div class="container text_styles news-page">
             <x-breadcrumbs.main :title="$news->title"></x-breadcrumbs.main>
             @if ($news->img)
                 <div class="news-image">
