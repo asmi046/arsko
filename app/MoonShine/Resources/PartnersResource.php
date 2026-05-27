@@ -73,7 +73,7 @@ class PartnersResource extends ModelResource
     {
         return [
             'name' => ['required', 'string', 'max:255'],
-            'logo' => ['required', 'string', 'max:255'],
+            'logo' => ($item->logo === "") ? ['required', 'string', 'max:255'] : [],
             'sort_order' => ['required', 'integer'],
         ];
     }
