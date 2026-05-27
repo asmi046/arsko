@@ -74,7 +74,7 @@ class NewsResource extends ModelResource
         return [
             'title' => ['required', 'string', 'max:255'],
             'text' => ['required', 'string'],
-            'img' => ['required', 'string', 'max:255'],
+            'img' => ($item->img === "")?['required', 'string', 'max:255']:[],
         ];
     }
 
