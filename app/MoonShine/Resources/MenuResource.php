@@ -93,7 +93,6 @@ class MenuResource extends ModelResource
         return [
             'menu_name' => ['required'],
             'title' => ['required'],
-            'title_en' => ['required'],
         ];
     }
 }
